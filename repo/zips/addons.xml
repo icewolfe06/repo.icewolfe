@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="plugin.program.icewolfewiz" name="icewolfe's wizard" version="1.0.3" provider-name="icewolfe">
+<addon id="plugin.program.icewolfewiz" name="icewolfe's wizard" version="1.0.4" provider-name="icewolfe">
     <requires>
         <import addon="xbmc.python" version="2.1.0" />
         <import addon="script.module.requests" />

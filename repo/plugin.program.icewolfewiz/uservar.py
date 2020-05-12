@@ -15,7 +15,7 @@ ART = os.path.join(PATH, 'resources', 'media')
 #########################################################
 ADDONTITLE = '[COLOR limegreen][B]Open[/B][/COLOR]Wizard'
 BUILDERNAME = 'OpenWizard'
-EXCLUDES = [ADDON_ID, 'repository.openwizard','skin.aeon.nox.silvo']
+EXCLUDES = [ADDON_ID, 'repository.openwizard','skin.aeon.nox.silvo','script.skinshortcuts']
 # Text File with build info in it.
 BUILDFILE = 'http://lbtechs.com/kodi/builds.txt'
 # How often you would like it to check for build updates in days
