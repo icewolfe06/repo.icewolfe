@@ -1,4 +1,6 @@
 import xbmc
+import xbmcaddon
+import xbmcgui
 import xbmcplugin
 
 import sys
@@ -10,6 +12,7 @@ except ImportError:  # Python 2
 
 from resources.libs.common.config import CONFIG
 from resources.libs.common import logging
+from resources.libs.common import tools
 from resources.libs.gui import menu
 
 advanced_settings_mode = 'advanced_settings'
@@ -20,6 +23,7 @@ class Router:
     def __init__(self):
         self.route = None
         self.params = {}
+        tools.ensure_folders()
 
     def _log_params(self, paramstring):
         _url = sys.argv[0]
@@ -108,6 +112,8 @@ class Router:
         elif mode == 'enableaddons':  # Maintenance - > Addon Tools -> Enable/Disable Addons
             menu.enable_addons()
             self._finish(handle)
+        elif mode == 'enableall':
+            menu.enable_addons(all=True)
         elif mode == 'toggleaddon':
             from resources.libs import db
             db.toggle_addon(name, url)
@@ -140,9 +146,9 @@ class Router:
         elif mode == 'viewIP':  # Maintenance -> Misc Maintenance -> Network Tools -> View IP Address & MAC Address
             menu.view_ip()
             self._finish(handle)
-        elif mode == 'speedtest':  # Maintenance -> Misc Maintenance -> Network Tools -> Speed Test
-            menu.speed_test()
-            self._finish(handle)
+        elif mode == 'speedtest': 
+            xbmc.executebuiltin('InstallAddon("script.speedtester")')
+            xbmc.executebuiltin('RunAddon("script.speedtester")')
         elif mode == 'apk':  # APK Installer
             menu.apk_menu(url)
             self._finish(handle)

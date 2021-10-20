@@ -16,7 +16,7 @@ ART = os.path.join(PATH, 'resources', 'media')
 ADDONTITLE = '[COLOR limegreen][B]Open[/B][/COLOR]Wizard'
 BUILDERNAME = 'OpenWizard'
 EXCLUDES = [ADDON_ID, 'repository.openwizard','skin.aeon.nox.silvo','script.skinshortcuts']
-# Text File with build info in it.
+# Text File with build info in it. Please read https://github.com/a4k-openproject/plugin.program.openwizard/wiki/Installing-Builds
 BUILDFILE = 'http://lbtechs.com/kodi/builds.txt'
 # How often you would like it to check for build updates in days
 # 0 being every startup of kodi
@@ -94,7 +94,7 @@ AUTOUPDATE = 'Yes'
 #        Auto Install Repo If Not Installed             #
 #########################################################
 # Enable Auto Install 'Yes' or 'No'
-AUTOINSTALL = 'Yes'
+AUTOINSTALL = 'yes'
 # Addon ID for the repository
 REPOID = 'repo.icewolfe'
 # Url to Addons.xml file in your repo folder(this is so we can get the latest version)
