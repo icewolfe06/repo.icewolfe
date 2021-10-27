@@ -13,8 +13,8 @@ ART = os.path.join(PATH, 'resources', 'media')
 #########################################################
 #        User Edit Variables                            #
 #########################################################
-ADDONTITLE = '[COLOR blue][B]Iceowlfe's[/B][/COLOR]Wizard'
-BUILDERNAME = 'Iceowlfes'
+ADDONTITLE = '[COLOR blue][B]Icewolfes[/B][/COLOR]Wizard'
+BUILDERNAME = 'Icewolfes'
 EXCLUDES = [ADDON_ID, 'repo.icewolfe']
 # Text File with build info in it. Please read https://github.com/a4k-openproject/plugin.program.openwizard/wiki/Installing-Builds
 BUILDFILE = 'http://lbtechs.com/kodi/builds.txt'
